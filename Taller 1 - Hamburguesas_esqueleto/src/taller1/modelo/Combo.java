@@ -15,7 +15,7 @@ public class Combo implements Producto {
 		
 	}
 	public void agregarItemACombo(Producto itemCombo) {
-		itemsCombo.add(null);
+		itemsCombo.add((ProductoMenu)itemCombo);
 	}
 	@Override
 	public int getPrecio() {

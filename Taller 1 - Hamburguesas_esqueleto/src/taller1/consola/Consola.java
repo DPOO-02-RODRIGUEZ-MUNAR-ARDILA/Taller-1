@@ -31,8 +31,7 @@ public class Consola
 				else if (opcion_seleccionada == 3)
 					ejecutarCerrarPedido();
 				else if (opcion_seleccionada == 4)
-					ejecutarConsultarInfoPedido();
-				
+					ejecutarConsultarInfoPedido();	
 				else
 				{
 					System.out.println("Por favor seleccione una opción válida.");
@@ -50,9 +49,10 @@ public class Consola
 	private void ejecutarIniciarPedido()
 	{
 		System.out.println("\n" + "Iniciar un nuevo pedido" + "\n");
-	}
-
 	
+		int seleccionar_ = Integer.parseInt(input1("Por favor seleccione una opción"))
+
+	}
 	private void ejecutarAgregarElemento()
 	{
 		System.out.println("\n" + "Agregar un elemento a un pedido" + "\n");
@@ -92,6 +92,4 @@ public class Consola
 		Consola consola = new Consola();
 		consola.ejecutarAplicacion();
 	}
-
-
 	}
